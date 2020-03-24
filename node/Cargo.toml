@@ -1,0 +1,109 @@
+[package]
+name = "node-oracle"
+version = "2.0.0"
+authors = ["Anonymous"]
+edition = "2018"
+license = "Unlicense"
+build = "build.rs"
+
+[[bin]]
+name = "node-oracle"
+
+[dependencies]
+futures = "0.3.1"
+log = "0.4.8"
+structopt = "0.3.8"
+
+[dependencies.sc-cli]
+version = "0.8.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-core]
+version = "2.0.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-executor]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-service]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-inherents]
+version = "2.0.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-transaction-pool]
+version = "2.0.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-transaction-pool]
+version = "2.0.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-network]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-consensus-aura]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-consensus-aura]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-consensus]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.grandpa]
+version = "0.8"
+package = "sc-finality-grandpa"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.grandpa-primitives]
+version = "2.0.0"
+package = "sp-finality-grandpa"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-client]
+version = "0.8"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sp-runtime]
+version = "2.0.0"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.sc-basic-authorship]
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[dependencies.runtime]
+package = "oracle-runtime"
+path = "../runtime"
+
+[build-dependencies.build-script-utils]
+version = "2.0.0"
+package = "substrate-build-script-utils"
+git = "https://github.com/paritytech/substrate.git"
+rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
+
+[build-dependencies]
+vergen = "3.0.4"
