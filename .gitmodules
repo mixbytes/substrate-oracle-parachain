@@ -1,9 +1,6 @@
 [submodule "client"]
-	path = client
-	url = git@github.com:mixbytes/substrate-oracle-client.git
+    path = client
+    url = git@github.com:mixbytes/substrate-oracle-client.git
 [submodule "pallets/oracle"]
-	path = pallets/oracle
-	url = git@github.com:mixbytes/substrate-oracle.git
-[submodule "pallets/tablescore"]
-	path = pallets/tablescore
-	url = git@github.com:mixbytes/substrate-tablescore.git
+    path = pallets/oracle
+    url = git@github.com:mixbytes/substrate-oracle.git

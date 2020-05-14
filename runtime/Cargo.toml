@@ -167,17 +167,17 @@ default-features = false
 git = "https://github.com/paritytech/substrate.git"
 rev = "00a400f82539e2f78e8ddbcd98aea512c87c5f3c"
 
-[dependencies.tablescore]
-version = "0.1.0"
-default-features = false
-path = "../pallets/tablescore"
-package = "pallet-tablescore"
-
 [dependencies.oracle]
-version = "0.0.1"
+version = "0.1.0"
 default-features = false
 path = "../pallets/oracle"
 package = "pallet-oracle"
+
+[dependencies.tablescore]
+version = "0.1.1"
+default-features = false
+git = "https://github.com/mixbytes/substrate-tablescore.git"
+package = "pallet-tablescore"
 
 [build-dependencies.wasm-builder-runner]
 version = "1.0.4"
@@ -200,7 +200,6 @@ std = [
 	"sp-api/std",
 	"sp-block-builder/std",
 	"sp-consensus-aura/std",
-	"sp-core/std",
 	"sp-inherents/std",
 	"sp-io/std",
 	"sp-offchain/std",

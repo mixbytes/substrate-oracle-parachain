@@ -271,8 +271,8 @@ construct_runtime!(
         Sudo: sudo,
         RandomnessCollectiveFlip: randomness_collective_flip::{Module, Call, Storage},
         Asset: asset::{Module, Call, Storage, Config<T>, Event<T>},
-        TablescoreModule: tablescore::{Module, Call, Storage, Config<T>, Event<T>},
-        OracleModule: oracle::{Module, Call, Storage, Config<T>, Event<T>},
+        TablescoreModule: tablescore::{Module, Call, Storage, Event<T>},
+        OracleModule: oracle::{Module, Call, Storage, Event<T>},
     }
 );
 
