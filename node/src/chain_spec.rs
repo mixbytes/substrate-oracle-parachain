@@ -142,6 +142,7 @@ fn testnet_genesis(initial_authorities: Vec<(AuraId, GrandpaId)>,
 		grandpa: Some(GrandpaConfig {
 			authorities: initial_authorities.iter().map(|x| (x.1.clone(), 1)).collect(),
 		}),
+                asset: None,
 	}
 }
 
