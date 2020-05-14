@@ -1,0 +1,2 @@
+[alias]
+test-run = "run -- --dev --alice --unsafe-rpc-external --rpc-external --rpc-port 9999 --ws-external --unsafe-ws-external --ws-port 9999 --log=debug -d ./target/tmp --rpc-cors ALL"
