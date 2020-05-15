@@ -1,5 +1,11 @@
 # Test stand for oracle frame
 
+## Initialize
+
+```console
+git submodule update --init --recursive
+```
+
 ## Run node
 
 ```console
